@@ -1,0 +1,15 @@
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\bin\Debug\netcoreapp3.1\Calculadora_de_Prestamos.exe
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\bin\Debug\netcoreapp3.1\Calculadora_de_Prestamos.deps.json
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\bin\Debug\netcoreapp3.1\Calculadora_de_Prestamos.runtimeconfig.json
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\bin\Debug\netcoreapp3.1\Calculadora_de_Prestamos.runtimeconfig.dev.json
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\bin\Debug\netcoreapp3.1\Calculadora_de_Prestamos.dll
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\bin\Debug\netcoreapp3.1\Calculadora_de_Prestamos.pdb
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.csprojAssemblyReference.cache
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.FrmConvertidor.resources
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.csproj.GenerateResource.cache
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.AssemblyInfoInputs.cache
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.AssemblyInfo.cs
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.dll
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.pdb
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.genruntimeconfig.cache
