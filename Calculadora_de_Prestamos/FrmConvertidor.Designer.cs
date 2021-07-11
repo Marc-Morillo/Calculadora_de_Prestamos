@@ -31,21 +31,21 @@
             this.lblMontodelPrestamo = new System.Windows.Forms.Label();
             this.lblCuotasMensuales = new System.Windows.Forms.Label();
             this.lblInteresMensual = new System.Windows.Forms.Label();
-            this.lblCuotaMensual = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtPrestamo = new System.Windows.Forms.TextBox();
             this.lblTipodePrestamo = new System.Windows.Forms.Label();
             this.CbxTipoPrestamo = new System.Windows.Forms.ComboBox();
             this.TxtTasa = new System.Windows.Forms.TextBox();
             this.CbxCantidadCuotas = new System.Windows.Forms.ComboBox();
             this.TxtResultadoCuota = new System.Windows.Forms.TextBox();
             this.BtnCalcular = new System.Windows.Forms.Button();
+            this.lblCuotaResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblMontodelPrestamo
             // 
             this.lblMontodelPrestamo.AutoSize = true;
             this.lblMontodelPrestamo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMontodelPrestamo.Location = new System.Drawing.Point(41, 60);
+            this.lblMontodelPrestamo.Location = new System.Drawing.Point(140, 66);
             this.lblMontodelPrestamo.Name = "lblMontodelPrestamo";
             this.lblMontodelPrestamo.Size = new System.Drawing.Size(320, 45);
             this.lblMontodelPrestamo.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             this.lblCuotasMensuales.AutoSize = true;
             this.lblCuotasMensuales.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCuotasMensuales.Location = new System.Drawing.Point(41, 277);
+            this.lblCuotasMensuales.Location = new System.Drawing.Point(12, 246);
             this.lblCuotasMensuales.Name = "lblCuotasMensuales";
             this.lblCuotasMensuales.Size = new System.Drawing.Size(460, 45);
             this.lblCuotasMensuales.TabIndex = 0;
@@ -66,36 +66,25 @@
             // 
             this.lblInteresMensual.AutoSize = true;
             this.lblInteresMensual.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblInteresMensual.Location = new System.Drawing.Point(41, 197);
+            this.lblInteresMensual.Location = new System.Drawing.Point(41, 187);
             this.lblInteresMensual.Name = "lblInteresMensual";
             this.lblInteresMensual.Size = new System.Drawing.Size(419, 45);
             this.lblInteresMensual.TabIndex = 0;
             this.lblInteresMensual.Text = "Tasa de intéres mensual (%):";
             this.lblInteresMensual.Click += new System.EventHandler(this.lblInteresMensual_Click);
             // 
-            // lblCuotaMensual
+            // TxtPrestamo
             // 
-            this.lblCuotaMensual.AutoSize = true;
-            this.lblCuotaMensual.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCuotaMensual.Location = new System.Drawing.Point(41, 478);
-            this.lblCuotaMensual.Name = "lblCuotaMensual";
-            this.lblCuotaMensual.Size = new System.Drawing.Size(239, 45);
-            this.lblCuotaMensual.TabIndex = 0;
-            this.lblCuotaMensual.Text = "Cuota mensual:";
-            this.lblCuotaMensual.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(367, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(434, 39);
-            this.textBox1.TabIndex = 1;
+            this.TxtPrestamo.Location = new System.Drawing.Point(466, 72);
+            this.TxtPrestamo.Name = "TxtPrestamo";
+            this.TxtPrestamo.Size = new System.Drawing.Size(457, 39);
+            this.TxtPrestamo.TabIndex = 1;
             // 
             // lblTipodePrestamo
             // 
             this.lblTipodePrestamo.AutoSize = true;
             this.lblTipodePrestamo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTipodePrestamo.Location = new System.Drawing.Point(41, 122);
+            this.lblTipodePrestamo.Location = new System.Drawing.Point(181, 127);
             this.lblTipodePrestamo.Name = "lblTipodePrestamo";
             this.lblTipodePrestamo.Size = new System.Drawing.Size(279, 45);
             this.lblTipodePrestamo.TabIndex = 0;
@@ -104,57 +93,68 @@
             // CbxTipoPrestamo
             // 
             this.CbxTipoPrestamo.FormattingEnabled = true;
-            this.CbxTipoPrestamo.Location = new System.Drawing.Point(326, 127);
+            this.CbxTipoPrestamo.Location = new System.Drawing.Point(466, 132);
             this.CbxTipoPrestamo.Name = "CbxTipoPrestamo";
-            this.CbxTipoPrestamo.Size = new System.Drawing.Size(475, 40);
+            this.CbxTipoPrestamo.Size = new System.Drawing.Size(457, 40);
             this.CbxTipoPrestamo.TabIndex = 3;
             // 
             // TxtTasa
             // 
-            this.TxtTasa.Location = new System.Drawing.Point(466, 203);
+            this.TxtTasa.Location = new System.Drawing.Point(466, 193);
             this.TxtTasa.Name = "TxtTasa";
             this.TxtTasa.ReadOnly = true;
-            this.TxtTasa.Size = new System.Drawing.Size(335, 39);
+            this.TxtTasa.Size = new System.Drawing.Size(457, 39);
             this.TxtTasa.TabIndex = 4;
             // 
             // CbxCantidadCuotas
             // 
             this.CbxCantidadCuotas.FormattingEnabled = true;
-            this.CbxCantidadCuotas.Location = new System.Drawing.Point(504, 282);
+            this.CbxCantidadCuotas.Location = new System.Drawing.Point(466, 251);
             this.CbxCantidadCuotas.Name = "CbxCantidadCuotas";
-            this.CbxCantidadCuotas.Size = new System.Drawing.Size(642, 40);
+            this.CbxCantidadCuotas.Size = new System.Drawing.Size(457, 40);
             this.CbxCantidadCuotas.TabIndex = 3;
             // 
             // TxtResultadoCuota
             // 
-            this.TxtResultadoCuota.Location = new System.Drawing.Point(286, 484);
+            this.TxtResultadoCuota.Location = new System.Drawing.Point(466, 311);
             this.TxtResultadoCuota.Name = "TxtResultadoCuota";
             this.TxtResultadoCuota.ReadOnly = true;
-            this.TxtResultadoCuota.Size = new System.Drawing.Size(174, 39);
+            this.TxtResultadoCuota.Size = new System.Drawing.Size(457, 39);
             this.TxtResultadoCuota.TabIndex = 5;
             // 
             // BtnCalcular
             // 
-            this.BtnCalcular.Location = new System.Drawing.Point(507, 416);
+            this.BtnCalcular.Location = new System.Drawing.Point(341, 406);
             this.BtnCalcular.Name = "BtnCalcular";
-            this.BtnCalcular.Size = new System.Drawing.Size(150, 46);
+            this.BtnCalcular.Size = new System.Drawing.Size(212, 89);
             this.BtnCalcular.TabIndex = 6;
             this.BtnCalcular.Text = "Calcular";
             this.BtnCalcular.UseVisualStyleBackColor = true;
+            // 
+            // lblCuotaResultado
+            // 
+            this.lblCuotaResultado.AutoSize = true;
+            this.lblCuotaResultado.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCuotaResultado.Location = new System.Drawing.Point(183, 305);
+            this.lblCuotaResultado.Name = "lblCuotaResultado";
+            this.lblCuotaResultado.Size = new System.Drawing.Size(277, 45);
+            this.lblCuotaResultado.TabIndex = 0;
+            this.lblCuotaResultado.Text = "Cuotas mensuales";
+            this.lblCuotaResultado.Click += new System.EventHandler(this.lblCuotasMensuales_Click);
             // 
             // FrmConvertidor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 642);
+            this.ClientSize = new System.Drawing.Size(1061, 582);
+            this.Controls.Add(this.lblCuotaResultado);
             this.Controls.Add(this.BtnCalcular);
             this.Controls.Add(this.TxtResultadoCuota);
             this.Controls.Add(this.CbxCantidadCuotas);
             this.Controls.Add(this.TxtTasa);
             this.Controls.Add(this.CbxTipoPrestamo);
             this.Controls.Add(this.lblTipodePrestamo);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblCuotaMensual);
+            this.Controls.Add(this.TxtPrestamo);
             this.Controls.Add(this.lblInteresMensual);
             this.Controls.Add(this.lblCuotasMensuales);
             this.Controls.Add(this.lblMontodelPrestamo);
@@ -171,14 +171,14 @@
         private System.Windows.Forms.Label lblMontodelPrestamo;
         private System.Windows.Forms.Label lblCuotasMensuales;
         private System.Windows.Forms.Label lblInteresMensual;
-        private System.Windows.Forms.Label lblCuotaMensual;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtPrestamo;
         private System.Windows.Forms.Label lblTipodePrestamo;
         private System.Windows.Forms.ComboBox CbxTipoPrestamo;
         private System.Windows.Forms.TextBox TxtTasa;
         private System.Windows.Forms.ComboBox CbxCantidadCuotas;
         private System.Windows.Forms.TextBox TxtResultadoCuota;
         private System.Windows.Forms.Button BtnCalcular;
+        private System.Windows.Forms.Label lblCuotaResultado;
     }
 }
 
