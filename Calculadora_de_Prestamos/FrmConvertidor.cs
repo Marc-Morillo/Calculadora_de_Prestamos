@@ -24,7 +24,7 @@ namespace Calculadora_de_Prestamos
             LoadCombobox();
             LoadCombobox2();
         }
-
+      
         private void LoadCombobox()
         {
             ComboboxItem Opcionpordefecto = new ComboboxItem();
@@ -182,7 +182,6 @@ namespace Calculadora_de_Prestamos
 
         private void CbxTipoPrestamo_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
     }
 }
