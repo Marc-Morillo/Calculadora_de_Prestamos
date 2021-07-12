@@ -179,5 +179,10 @@ namespace Calculadora_de_Prestamos
         {
 
         }
+
+        private void CbxTipoPrestamo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

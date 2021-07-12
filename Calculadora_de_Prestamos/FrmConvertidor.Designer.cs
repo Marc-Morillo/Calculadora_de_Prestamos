@@ -97,6 +97,7 @@
             this.CbxTipoPrestamo.Name = "CbxTipoPrestamo";
             this.CbxTipoPrestamo.Size = new System.Drawing.Size(457, 40);
             this.CbxTipoPrestamo.TabIndex = 3;
+            this.CbxTipoPrestamo.SelectedIndexChanged += new System.EventHandler(this.CbxTipoPrestamo_SelectedIndexChanged);
             // 
             // TxtTasa
             // 
@@ -124,7 +125,7 @@
             // 
             // BtnCalcular
             // 
-            this.BtnCalcular.Location = new System.Drawing.Point(341, 406);
+            this.BtnCalcular.Location = new System.Drawing.Point(711, 400);
             this.BtnCalcular.Name = "BtnCalcular";
             this.BtnCalcular.Size = new System.Drawing.Size(212, 89);
             this.BtnCalcular.TabIndex = 6;
@@ -159,7 +160,7 @@
             this.Controls.Add(this.lblCuotasMensuales);
             this.Controls.Add(this.lblMontodelPrestamo);
             this.Name = "FrmConvertidor";
-            this.Text = "Calculadora de Prestamos";
+            this.Text = " Calculadora de Prestamos Personales";
             this.Load += new System.EventHandler(this.FrmConvertidor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

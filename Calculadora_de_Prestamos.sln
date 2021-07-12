@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora_de_Prestamos", "Calculadora_de_Prestamos\Calculadora_de_Prestamos.csproj", "{CA9F66EE-3EC3-477D-BA53-39B3700D2FB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculadora_de_Prestamos", "Calculadora_de_Prestamos\Calculadora_de_Prestamos.csproj", "{CA9F66EE-3EC3-477D-BA53-39B3700D2FB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessLayer", "BussinessLayer\BussinessLayer.csproj", "{78E7D7FA-AD76-4036-A075-A6B436D73F57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CA9F66EE-3EC3-477D-BA53-39B3700D2FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA9F66EE-3EC3-477D-BA53-39B3700D2FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA9F66EE-3EC3-477D-BA53-39B3700D2FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E7D7FA-AD76-4036-A075-A6B436D73F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E7D7FA-AD76-4036-A075-A6B436D73F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E7D7FA-AD76-4036-A075-A6B436D73F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E7D7FA-AD76-4036-A075-A6B436D73F57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
