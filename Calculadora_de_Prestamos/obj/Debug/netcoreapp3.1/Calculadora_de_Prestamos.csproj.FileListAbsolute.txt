@@ -13,3 +13,6 @@ C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Pre
 C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.dll
 C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.pdb
 C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.genruntimeconfig.cache
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\bin\Debug\netcoreapp3.1\BussinessLayer.dll
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\bin\Debug\netcoreapp3.1\BussinessLayer.pdb
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\Calculadora_de_Prestamos\obj\Debug\netcoreapp3.1\Calculadora_de_Prestamos.csproj.CopyComplete

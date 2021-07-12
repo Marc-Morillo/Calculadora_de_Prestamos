@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "BussinessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/BussinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BussinessLayer.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BussinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../BussinessLayer/BussinessLayer.csproj",
+      "msbuildProject": "../BussinessLayer/BussinessLayer.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "BussinessLayer >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Marcos Morillo\\.nuget\\packages\\": {},
@@ -37,7 +56,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Marcos Morillo\\PROYECTOS\\C#\\Calculadora_de_Prestamos\\BussinessLayer\\BussinessLayer.csproj": {
+              "projectPath": "C:\\Users\\Marcos Morillo\\PROYECTOS\\C#\\Calculadora_de_Prestamos\\BussinessLayer\\BussinessLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

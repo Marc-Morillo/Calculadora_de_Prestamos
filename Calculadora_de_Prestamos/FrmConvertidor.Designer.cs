@@ -106,6 +106,7 @@
             this.TxtTasa.ReadOnly = true;
             this.TxtTasa.Size = new System.Drawing.Size(457, 39);
             this.TxtTasa.TabIndex = 4;
+            this.TxtTasa.TextChanged += new System.EventHandler(this.TxtTasa_TextChanged);
             // 
             // CbxCantidadCuotas
             // 
@@ -114,6 +115,7 @@
             this.CbxCantidadCuotas.Name = "CbxCantidadCuotas";
             this.CbxCantidadCuotas.Size = new System.Drawing.Size(457, 40);
             this.CbxCantidadCuotas.TabIndex = 3;
+            this.CbxCantidadCuotas.SelectedIndexChanged += new System.EventHandler(this.CbxCantidadCuotas_SelectedIndexChanged);
             // 
             // TxtResultadoCuota
             // 
@@ -122,15 +124,20 @@
             this.TxtResultadoCuota.ReadOnly = true;
             this.TxtResultadoCuota.Size = new System.Drawing.Size(457, 39);
             this.TxtResultadoCuota.TabIndex = 5;
+            this.TxtResultadoCuota.TextChanged += new System.EventHandler(this.TxtResultadoCuota_TextChanged);
             // 
             // BtnCalcular
             // 
-            this.BtnCalcular.Location = new System.Drawing.Point(711, 400);
+            this.BtnCalcular.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BtnCalcular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnCalcular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnCalcular.Location = new System.Drawing.Point(466, 389);
             this.BtnCalcular.Name = "BtnCalcular";
-            this.BtnCalcular.Size = new System.Drawing.Size(212, 89);
+            this.BtnCalcular.Size = new System.Drawing.Size(457, 114);
             this.BtnCalcular.TabIndex = 6;
             this.BtnCalcular.Text = "Calcular";
-            this.BtnCalcular.UseVisualStyleBackColor = true;
+            this.BtnCalcular.UseVisualStyleBackColor = false;
+            this.BtnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
             // 
             // lblCuotaResultado
             // 
@@ -147,7 +154,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 582);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1013, 582);
             this.Controls.Add(this.lblCuotaResultado);
             this.Controls.Add(this.BtnCalcular);
             this.Controls.Add(this.TxtResultadoCuota);
@@ -159,6 +167,10 @@
             this.Controls.Add(this.lblInteresMensual);
             this.Controls.Add(this.lblCuotasMensuales);
             this.Controls.Add(this.lblMontodelPrestamo);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmConvertidor";
             this.Text = " Calculadora de Prestamos Personales";
             this.Load += new System.EventHandler(this.FrmConvertidor_Load);

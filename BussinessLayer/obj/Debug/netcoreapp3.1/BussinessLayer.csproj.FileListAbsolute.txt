@@ -1,0 +1,9 @@
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\BussinessLayer\bin\Debug\netcoreapp3.1\BussinessLayer.deps.json
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\BussinessLayer\bin\Debug\netcoreapp3.1\BussinessLayer.dll
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\BussinessLayer\bin\Debug\netcoreapp3.1\BussinessLayer.pdb
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.csprojAssemblyReference.cache
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.AssemblyInfoInputs.cache
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.AssemblyInfo.cs
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.dll
+C:\Users\Marcos Morillo\PROYECTOS\C#\Calculadora_de_Prestamos\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.pdb

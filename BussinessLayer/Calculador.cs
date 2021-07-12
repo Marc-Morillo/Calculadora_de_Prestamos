@@ -4,10 +4,10 @@ namespace BussinessLayer
 {
     public class Calculador
     {
-        public double Calcular(int MontoPrestamo, int CantidaddeCuotas, int TasadeInteres)
+        public double Calcular(double MontoPrestamo, int CantidaddeCuotas, int TasadeInteres)
         {
             double CantidadFinal = 0;
-            int Porciento, Interes;
+            double Porciento, Interes;
             switch (TasadeInteres)
             {
                 case (int)EnumTasa.PERSONAL:

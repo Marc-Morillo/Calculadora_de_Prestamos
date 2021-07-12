@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calculadora_de_Prestamos.CustomControlItem;
 using Calculadora_de_Prestamos.CustomControlItem2;
+using BussinessLayer;
 
 namespace Calculadora_de_Prestamos
 {
     public partial class FrmConvertidor : Form
     {
+        public bool SeCalculo { get; set; } = false;
         public FrmConvertidor()
         {
             InitializeComponent();
@@ -24,7 +26,85 @@ namespace Calculadora_de_Prestamos
             LoadCombobox();
             LoadCombobox2();
         }
-      
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            CalcularPrestamo();
+        }
+
+        private void CbxTipoPrestamo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            VerInteres();
+            if (SeCalculo)
+            {
+                CalcularPrestamo();
+            }
+        }
+
+        private void CbxCantidadCuotas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (SeCalculo)
+            {
+                CalcularPrestamo();
+            }
+        }
+
+        private void CalcularPrestamo()
+        {
+            ComboboxItem SeleccionadoTipodePrestamo = CbxTipoPrestamo.SelectedItem as ComboboxItem;
+            ComboboxItem2 SeleccionadoMes = CbxCantidadCuotas.SelectedItem as ComboboxItem2;
+
+            try
+            {
+                if (string.IsNullOrEmpty(TxtPrestamo.Text))
+                {
+                    MessageBox.Show("Debe ingresar un monto del prestamo", "Advertencia");
+
+                }
+                else if (SeleccionadoTipodePrestamo.Value == null)
+                {
+                    MessageBox.Show("Debe seleccionar un tipo de prestamo", "Advertencia");
+                }
+                else if (SeleccionadoMes.Value == null)
+                {
+                    MessageBox.Show("Debe seleccionar la cantidad de meses", "Advertencia");
+                }
+                else
+                {
+                    Calculador calculador = new Calculador();
+                    int TipoMes = (int)SeleccionadoMes.Value;
+                    int TipoPrestamo = (int)SeleccionadoTipodePrestamo.Value;
+                    double Prestamo = Convert.ToDouble(TxtPrestamo.Text);
+
+                    double resultado = Math.Round(calculador.Calcular(Prestamo, TipoMes, TipoPrestamo), 2);
+                    TxtResultadoCuota.Text = resultado.ToString();
+
+                    SeCalculo = true;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Su monto debe de ingresar solo cantidades numericas", "Adventerncia");
+            }
+        }
+
+        private void VerInteres()
+        {
+            ComboboxItem SeleccionadoTipodePrestamo = CbxTipoPrestamo.SelectedItem as ComboboxItem;
+       
+            if(SeleccionadoTipodePrestamo.Text == "Personal")
+            {
+                TxtTasa.Text = "22%";
+            }
+            else if (SeleccionadoTipodePrestamo.Text == "Automóvil")
+            {
+                TxtTasa.Text = "12%";
+            }
+            else if (SeleccionadoTipodePrestamo.Text == "Hipotecario")
+            {
+                TxtTasa.Text = "8%";
+            }
+        }
         private void LoadCombobox()
         {
             ComboboxItem Opcionpordefecto = new ComboboxItem();
@@ -180,8 +260,14 @@ namespace Calculadora_de_Prestamos
 
         }
 
-        private void CbxTipoPrestamo_SelectedIndexChanged(object sender, EventArgs e)
+        private void TxtResultadoCuota_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void TxtTasa_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
